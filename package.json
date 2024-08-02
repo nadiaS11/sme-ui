@@ -22,7 +22,7 @@
     "build": "tsc && vite build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "yarn build"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.6.1",
@@ -59,9 +59,9 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run format",
-      "npm run lint",
-      "npm run test"
+      "yarn format",
+      "yarn lint",
+      "yarn test"
     ]
   }
 }
